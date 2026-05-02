@@ -67,7 +67,6 @@ cp .env.example .env
 You need:
 
 - **`GROQ_API_KEY`** — from [console.groq.com](https://console.groq.com) (free tier, whisper-large-v3)
-- **`ANTHROPIC_API_KEY`** or **`OPENAI_API_KEY`** — for LLM summarisation
 
 ### 5. Run Stage 1 — load data and validate environment
 
@@ -78,7 +77,7 @@ python stage1_setup.py
 This will:
 
 - Check all API keys and packages are configured correctly
-- Download 5 representative samples from the AMI corpus
+- Download 20 representative samples from the AMI corpus
 - Save audio files to `data/ami_samples/` and a manifest to `data/samples_manifest.json`
 
 ---
@@ -88,12 +87,12 @@ This will:
 ```
 deepbrief-ai/
 │
-├── stage1_setup.py              # Data loading & environment validation
-├── stage2_transcription.py      # Groq Whisper transcription (coming)
-├── stage3_llm.py                # Summarisation & action item extraction (coming)
-├── stage4_sentiment.py          # HuggingFace tone analysis (coming)
-├── stage5_dashboard.py          # Streamlit app — full pipeline (coming)
-├── stage6_evaluation.py         # WER, ROUGE, manual eval (coming)
+├── stage1.py              # Data loading & environment validation
+├── stage2.py              # Groq Whisper transcription (coming)
+├── stage3_llm.py          # Summarisation & action item extraction (coming)
+├── stage4_sentiment.py    # HuggingFace tone analysis (coming)
+├── stage5_dashboard.py    # Streamlit app — full pipeline (coming)
+├── stage6_evaluation.py   # WER, ROUGE, manual eval (coming)
 │
 ├── data/
 │   ├── ami_samples/             # Saved .wav files (gitignored)
@@ -143,9 +142,6 @@ deepbrief-ai/
 ---
 
 ## Team
-
-6-person team · 2-week implementation window  
-Assessment: working demo · written report · oral presentation · technical complexity
 
 ---
 
