@@ -37,3 +37,8 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+# --- Stage 3 additions ---
+.ipynb_checkpoints/
+.virtual_documents/
+data/stage3_output.json
+Untitled*.ipynb
