@@ -66,7 +66,7 @@ cp .env.example .env
 
 You need:
 
-- **`GROQ_API_KEY`** — from [console.groq.com](https://console.groq.com) (free tier, whisper-large-v3)
+- **`GROQ_API_KEY`** — from [console.groq.com](https://console.groq.com) (free tier, whisper-turbo-v3)
 
 ### 5. Run Stage 1 — load data and validate environment
 
